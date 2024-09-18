@@ -7,7 +7,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = config('SECRET_KEY')
 
-ALLOWED_HOSTS = [config('ALLOWED_HOSTS', default='127.0.0.1')]
+ALLOWED_HOSTS = [config('43.201.255.0')]
 
 
 # Application definition
