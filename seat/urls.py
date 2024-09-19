@@ -1,7 +1,7 @@
 # seat/ urls.py
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
-from .views import SeatViewSet, BusViewSet, StopViewSet, SeatListCreateView, get_seat_data_by_bus
+from .views import SeatViewSet, BusViewSet, StopViewSet, SeatListCreateView
 
 router = DefaultRouter()
 router.register(r'seats', SeatViewSet)
