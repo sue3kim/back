@@ -1,4 +1,3 @@
-# seat/models.py
 from django.db import models
 
 class Stop(models.Model):
@@ -32,7 +31,7 @@ class Seat(models.Model):
         choices=SEAT_STATUS_CHOICES,
         default=AVAILABLE
     )
-    bus = models.ForeignKey(Bus, on_delete=models.CASCADE, related_name='seats')  # Bus와의 관계 추가
+
 
     def __str__(self):
         return f"{self.seat_number} ({self.status})"
