@@ -11,5 +11,5 @@ router.register(r'stops', StopViewSet)
 urlpatterns = [
     path('', include(router.urls)),
     path('api/', include(router.urls)),
-    path('api/seat/by-bus/<int:bus_id>/', get_seat_data_by_bus),  # 특정 버스의 좌석 정보 API
+    
 ]
