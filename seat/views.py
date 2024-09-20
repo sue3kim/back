@@ -4,6 +4,7 @@ from .models import Seat, Bus, Stop
 from .serializers import SeatSerializer, BusSerializer, StopSerializer
 from rest_framework.decorators import action
 from rest_framework.response import Response
+from rest_framework.permissions import AllowAny
 
 class SeatViewSet(viewsets.ModelViewSet):
     queryset = Seat.objects.all()
