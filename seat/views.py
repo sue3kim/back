@@ -8,6 +8,7 @@ from rest_framework.response import Response
 class SeatViewSet(viewsets.ModelViewSet):
     queryset = Seat.objects.all()
     serializer_class = SeatSerializer
+    permission_classes = [AllowAny]
 
 class BusViewSet(viewsets.ModelViewSet):
     queryset = Bus.objects.all()
